@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="1" skipped="0" failures="0" errors="0" time="0.017768" timestamp="2020-04-06T12:17:08+03:00" hostname="SK-LV102">
+<properties>
+<property name="seed" value="58479"/>
+</properties>
+<testcase classname="spec.match_import_action_spec" name="Fastlane::Actions::MatchImportAction#run prints a message" file="./spec/match_import_action_spec.rb" time="0.000124"></testcase>
+</testsuite>

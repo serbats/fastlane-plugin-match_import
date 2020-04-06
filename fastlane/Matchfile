@@ -1,0 +1,10 @@
+git_url "git@github.com:serbats/ios-certificates.git"
+
+type "development" # The default type, can be: appstore, adhoc or development
+
+app_identifier ["com.rawatcreations.timelesstodayiphone"]
+team_id "CEWXC563BV"
+platform "ios"
+
+# For all available options run `match --help`
+# Remove the # in the beginning of the line to enable the other options

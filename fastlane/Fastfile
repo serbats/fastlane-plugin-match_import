@@ -1,0 +1,71 @@
+lane :test_import do
+  match_import(file_name: 'Gemfile*', destination_path: "testPath/", source_path: '.', verbose: true)
+end
+
+lane :test_import2 do
+  match_import(file_name: 'Gemfile', source_path: '.',  verbose: true)
+end
+
+lane :test_export do
+  match_export(file_name: 'Gemfile*', destination_path: "testDir/", source_path: 'testPath/', verbose: true)
+end
+
+lane :test_export2 do
+  match_export(file_name: 'Gemfile',  verbose: true)
+end
+
+lane :test_remove do
+  match_remove(file_name: 'Gemfile*', source_path: 'testPath/', verbose: true)
+end
+
+lane :test_remove2 do
+  match_remove(file_name: 'Gemfile',  verbose: true)
+end
+
+lane :test_apns_import do
+  match_import_apns(type: "development", cert_file_name: 'Development.cer', p12_file_name: 'Development.p12', source_path: 'test', verbose: true)
+end
+
+lane :test_apns_import2 do
+  match_import_apns(type: "development", cert_file_name: 'ProdPush.cer', p12_file_name: 'ProdPush.p12', source_path: 'test', verbose: true)
+end
+
+lane :test_apns_import3 do
+  match_import_apns(type: "adhoc", cert_file_name: 'ProdPush.cer', p12_file_name: 'ProdPush.p12', source_path: 'test', verbose: true)
+end
+
+lane :test_apns_import4 do
+  match_import_apns(type: "adhoc", cert_file_name: 'aps.cer', p12_file_name: 'ProdPush.p12', source_path: 'test', verbose: true)
+end
+
+lane :test_apns_import5 do
+  match_import_apns(type: "developer_id", cert_file_name: 'aps.cer', p12_file_name: 'ProdPush.p12', source_path: 'test', verbose: true)
+end
+
+lane :test_apns_export do
+  match_export_apns(type: "adhoc", destination_path: 'testDir', verbose: true)
+end
+
+lane :test_apns_export2 do
+  match_export_apns(type: "adhoc", verbose: true)
+end
+
+lane :test_apns_export3 do
+  match_export_apns(type: "development", verbose: true)
+end
+
+lane :test_apns_export4 do
+  match_export_apns(type: "adhoc", keychain_name: "Fastlane", verbose: true)
+end
+
+lane :test_apns_export5 do
+  match_export_apns(type: "adhoc", keychain_name: "login", verbose: true)
+end
+
+lane :test_apns_remove_invalid do
+  match_remove_invalid_apns(type: "adhoc", verbose: true)
+end
+
+lane :test_apns_remove_invalid2 do
+  match_remove_invalid_apns(type: "development", verbose: true)
+end
