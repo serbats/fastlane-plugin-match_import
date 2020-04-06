@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/serbats/fastlane-plugin-match_import"
   spec.license       = "MIT"
 
-  spec.files         = Dir["lib/**/*"] + %w(/bin/match_import README.md LICENSE)
+  spec.files         = Dir["lib/**/*"] + %w(bin/match_import README.md LICENSE)
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
   spec.bindir = "bin"
